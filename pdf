@@ -1,0 +1,26 @@
+import urllib.request
+from io import BytesIO
+import PyPDF2
+
+def extract_text_from_pdf(pdf_url):
+    # Convert URL to file path
+    response = urllib.request.urlopen(pdf_url)
+    pdf_file = BytesIO(response.read())
+
+    # Extract text from PDF
+    pdf_reader = PyPDF2.PdfFileReader(pdf_file)
+    pdf_text = ""
+    for page_num in range(pdf_reader.numPages):
+        pdf_text += pdf_reader.getPage(page_num).extractText()
+    return pdf_text
+
+def main():
+    # Provide the URL of the PDF file
+    pdf_url = "file:///C:/Users/Admin/Downloads/25_Python_Important_Interview_Questions.pdf"
+
+    # Extract text from the PDF file
+    pdf_text = extract_text_from_pdf(pdf_url)
+    print(pdf_text)
+
+if __name__ == "__main__":
+    main()
