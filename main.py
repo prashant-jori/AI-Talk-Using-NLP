@@ -1,8 +1,8 @@
-!pip install PyPDF2
-!pip install SpeechRecognition
-!pip install pyttsx3
-!pip install pyaudio
-!pip install google-cloud-speech
+pip install PyPDF2
+pip install SpeechRecognition
+pip install pyttsx3
+pip install pyaudio
+pip install google-cloud-speech
 import streamlit as st
 import PyPDF2
 import spacy
