@@ -1,0 +1,91 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPI4qICCunJbqZByHcs8X+r",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/prashant-jori/AI-Talk-Using-NLP/blob/main/Internship.json\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "Dt9zBugeUeB9"
+      },
+      "outputs": [],
+      "source": [
+        "import json\n",
+        "\n",
+        "# Sample JSON data\n",
+        "data = {\n",
+        "    \"models\": [\n",
+        "        {\n",
+        "            \"name\": \"datapoint1\",\n",
+        "            \"color\": \"red\",\n",
+        "            \"bboxes\": \"bbox1\",\n",
+        "            \"label\": \"datapoint1\",\n",
+        "            \"x\": 1,\n",
+        "            \"y\": 2\n",
+        "        },\n",
+        "        {\n",
+        "            \"name\": \"datapoint2\",\n",
+        "            \"color\": \"blue\",\n",
+        "            \"bboxes\": \"bbox2\",\n",
+        "            \"label\": \"datapoint2\",\n",
+        "            \"x\": 3,\n",
+        "            \"y\": 4\n",
+        "        }\n",
+        "    ],\n",
+        "    \"type\": \"vbar_categorical\",\n",
+        "    \"general_figure_info\": {\n",
+        "        \"title\": {\n",
+        "            \"text\": \"Sample Title\",\n",
+        "            \"bbox\": \"title_bbox\"\n",
+        "        },\n",
+        "        \"x_axis\": {\n",
+        "            \"bbox\": \"x_bbox\",\n",
+        "            \"label\": \"x-axis\",\n",
+        "            \"ticks_labels\": \"x_ticks\"\n",
+        "        },\n",
+        "        \"y_axis\": {\n",
+        "            \"bbox\": \"y_bbox\",\n",
+        "            \"label\": \"y-axis\",\n",
+        "            \"ticks_labels\": \"y_ticks\"\n",
+        "        },\n",
+        "        \"legend\": {\n",
+        "            \"bbox\": \"legend_bbox\",\n",
+        "            \"label\": \"Legend\"\n",
+        "        },\n",
+        "        \"plot_info\": {\n",
+        "            \"bbox\": \"plot_bbox\"\n",
+        "        },\n",
+        "        \"figure_info\": {\n",
+        "            \"bbox\": \"figure_bbox\"\n",
+        "        }\n",
+        "    },\n",
+        "    \"image_index\": 1\n",
+        "}"
+      ]
+    }
+  ]
+}
